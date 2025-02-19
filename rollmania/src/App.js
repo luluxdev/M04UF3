@@ -1,12 +1,17 @@
 import './App.css';
 import Die from './Die.js';
+import Title from './Title.js';
 
 function App() {
   return (
-    <main className="App">
+	<div className="rollmania">
+		<Title />
+	<main className="App">
 		<Die />
 		<Die />
-    </main>
+		<Die />
+   </main>
+	</div>
   );
 }
 
