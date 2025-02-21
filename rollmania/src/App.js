@@ -18,9 +18,9 @@ function App() {
 
   return (
 		<div className="rollmania">
-			<Title title_text="Rollmania!!!" />
+			<Title title_text="~Rollmania~" />
 	    <main className="App">
-				<Dice cantidad="5" roll={roll} />
+				<Dice cantidad="3" roll={roll} />
     	</main>
 			<RollButton roll_func={roll_dice}/>
 		</div>
