@@ -1,15 +1,13 @@
 import './App.css';
-import Die from './Die.js';
 import Title from './Title.js';
+import Dice from './Dice.js';
 
 function App() {
   return (
 	<div className="rollmania">
-		<Title />
+		<Title titulo="ROLLMANIA"/>
 	<main className="App">
-		<Die />
-		<Die />
-		<Die />
+		<Dice cantidad="2 />
    </main>
 	</div>
   );
