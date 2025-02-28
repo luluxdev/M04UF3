@@ -1,5 +1,5 @@
 import './PlayerName.css'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function PlayerName(props) {  
 	
@@ -8,6 +8,11 @@ function PlayerName(props) {
 
 	let min_name = 3;
 	let max_name = 12;
+
+	useEffect( () => {
+		if (player_name != "")
+			props.onPlayerNameChange(player_name);
+	});
 
 	function update_name (event){
 		setPlayerName(event.target.value);
@@ -26,7 +31,7 @@ if(!show_name){
 	return(
 		<p>
 			<input type="text" name="player_name" placeholder="Nombre del jugador" value={player_name} onChange={update_name}/>
-			<button onClick={write_name}>Save</button>
+			<button onClick={write_name}>♡ Save ♡</button>
 			</p>
 	);
 }

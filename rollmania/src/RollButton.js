@@ -16,7 +16,7 @@ function RollButton(props) {
 		onClick={props.roll_func}
 		disabled={count > 0 ? "disabled" : ""}
 		>
-      {count > 0 ? count : "Roll!!!"}
+      {count > 0 ? count : "˗ˏˋ ꒰ ROLL! ꒱ ˎˊ˗"}
     </button>
   );
 }
