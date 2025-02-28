@@ -18,12 +18,13 @@ function App() {
 
   return (
 		<div className="rollmania">
-			<Title title_text="~Rollmania~" />
+			<Title title_text="(ﾉ◕ヮ◕)ﾉ *:・ﾟ✧rollmania✧・ﾟ:*" />
 			<PlayerName />
 			<main className="App">
 				<Dice cantidad="3" roll={roll} />
     	</main>
 			<RollButton roll_func={roll_dice}/>
+			<h2>"︵‿︵‿୨♡୧‿︵‿︵"</h2>
 		</div>
   );
 }
