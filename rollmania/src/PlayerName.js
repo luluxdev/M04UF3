@@ -30,7 +30,7 @@ function PlayerName(props) {
 if(!show_name){
 	return(
 		<p>
-			<input type="text" name="player_name" placeholder="Nombre del jugador" value={player_name} onChange={update_name}/>
+			<input type="text" name="player_name" placeholder="Nombre del jugador/a" onChange={update_name}/>
 			<button onClick={write_name}>♡ Save ♡</button>
 			</p>
 	);
